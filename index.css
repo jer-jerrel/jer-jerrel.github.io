@@ -442,33 +442,28 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__box {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically by default */
+    align-items: flex-start; /* Align items to the start */
+    gap: 5rem; /* Add spacing between child elements */
+    margin-bottom: 4rem; /* General spacing between boxes */
 }
 
-@media(max-width: 900px) {
+@media (min-width: 901px) {
     .work__box {
-        align-items: stretch;
-        flex-direction: column-reverse;
-    }
-}
-
-.work__box:not(:last-child) {
-    margin-bottom: 40rem;
-}
-
-@media(max-width: 500px) {
-    .work__box:not(:last-child) {
-        margin-bottom: 40rem;
+        flex-direction: row; /* Align items horizontally on larger screens */
+        align-items: center; /* Center items vertically */
+        margin-bottom: 8rem; /* Larger spacing between boxes */
     }
 }
 
 .work__links {
     display: flex;
     align-items: center;
+    gap: 2rem; /* Add spacing between links */
 }
 
 .work__text {
-    flex: 0 0 30%;
+    flex: 0 0 30%; /* Make text occupy 30% of the space */
 }
 
 .work__list {
@@ -481,7 +476,7 @@ body:not(.user-is-tabbing) a:focus {
     display: block;
     height: 3rem;
     margin-left: var(--gutter-normal);
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .work__code:hover {
@@ -492,18 +487,30 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
-@media(min-width: 901px) {
+@media (min-width: 901px) {
     .work__image-box {
-        flex: 1;
-        margin: 0 0 0 10rem;
+        flex: 1; /* Make the image occupy remaining space */
+        margin-left: 10rem; /* Add spacing to the left of the image */
     }
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     .work__code {
         height: 4rem;
     }
+
+    .work__box {
+        flex-direction: column-reverse; /* Reverse the order for small screens */
+        align-items: stretch; /* Ensure items stretch fully */
+    }
 }
+
+@media (max-width: 500px) {
+    .work__box:not(:last-child) {
+        margin-bottom: 20rem; /* Reduce spacing on small screens */
+    }
+}
+
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
