@@ -403,4 +403,17 @@ a:hover {
 .about h2 {
     margin-top: 4rem; /* pushes the About Me header down */
 }
+.contact {
+    padding-top: 6rem;   /* space from top, like About section */
+    padding-bottom: 6rem; /* space at bottom before footer */
+}
+
+.footer__social-links {
+    list-style: none; /* removes the dots */
+    padding: 0;       /* optional: remove default padding */
+    margin: 0;        /* optional: remove default margin */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
 

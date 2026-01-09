@@ -41,3 +41,21 @@
       alterStyles(isBackToTopRendered);
     }
   });
+
+
+document.querySelectorAll('.nav__link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const headerOffset = document.querySelector('.header .nav').offsetHeight;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
