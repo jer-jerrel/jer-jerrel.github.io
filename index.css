@@ -357,3 +357,45 @@ a:hover {
 .header .nav__link:hover {
     color: var(--pink); /* Keeps your hover effect */
 }
+
+/* Header navigation bar styling */
+.header .nav {
+    display: flex;
+    justify-content: center; /* center nav items */
+    width: 100%;             /* full width of the page */
+    background-color: #141418; /* fully opaque dark gray */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    position: fixed;         /* sticky at top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+/* Adjust nav items spacing */
+.header .nav__items {
+    gap: 2rem; /* space between links */
+}
+
+/* Nav link colors */
+.header .nav__link {
+    color: var(--white);
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav links */
+.header .nav__link:hover {
+    color: var(--pink);
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+.header__text-box {
+    padding-top: 6rem; /* enough space for nav */
+}
