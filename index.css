@@ -348,3 +348,12 @@ a:hover {
         margin-right: var(--gutter-normal);
     }
 }
+
+/* Header navigation link colors */
+.header .nav__link {
+    color: var(--white); /* Makes links white */
+}
+
+.header .nav__link:hover {
+    color: var(--pink); /* Keeps your hover effect */
+}
