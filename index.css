@@ -399,3 +399,8 @@ a:hover {
 .header__text-box {
     padding-top: 6rem; /* enough space for nav */
 }
+
+.about h2 {
+    margin-top: 4rem; /* pushes the About Me header down */
+}
+
