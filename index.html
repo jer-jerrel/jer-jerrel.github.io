@@ -17,16 +17,14 @@
 
   <!-- ***** Header ***** -->
   <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="nav row" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
 
     <div class="header__text-box row">
       <div class="header__text">
@@ -41,24 +39,22 @@
 
     <!-- ***** About ***** -->
     <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              I'm a 22-year-old Computer Science student at Hogeschool Rotterdam, currently exploring software development
-              with Python, C#, and React. I enjoy working on full-stack projects, improving legacy code, and learning
-              new technologies to build scalable and reliable software.
-            </p>
-            <p>
-              Outside of coding, I like going to the gym and tracking my progress. I thrive on challenges and enjoy
-              seeing the tangible impact of my work in real-world applications.
-            </p>
-          </div>
+      <div class="row about__content">
+        <div class="about__text">
+          <h2>About Me</h2>
+          <p>
+            I'm a 22-year-old Computer Science student at Hogeschool Rotterdam, currently exploring software development
+            with Python, C#, and React. I enjoy working on full-stack projects, improving legacy code, and learning
+            new technologies to build scalable and reliable software.
+          </p>
+          <p>
+            Outside of coding, I like going to the gym and tracking my progress. I thrive on challenges and enjoy
+            seeing the tangible impact of my work in real-world applications.
+          </p>
+        </div>
 
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/jerrel-photo.jpg" alt="Jerrel Janssen">
-          </div>
+        <div class="about__photo-container">
+          <img class="about__photo" src="./images/jerrel-photo.jpg" alt="Jerrel Janssen">
         </div>
       </div>
     </section>
@@ -82,13 +78,12 @@
               </ul>
               <p>Contribution:</p>
               <ul class="work__list">
-                <li>All Pydantic Models, Routing with Endpoints & extensive Validation, 
-                    SQL queries & Integration Testsfor Payments and Discount Codes</li>
-                <li>Creating Reservations, Starting Sessions with them and applying Discount codes</li>
+                <li>All Pydantic Models, Routing & extensive Validation</li>
+                <li>Creating Reservations, Starting Sessions & applying Discount codes</li>
                 <li>Price Calculator for Payments</li>
-                <li>Creating a Test Database and Testing Configurations</li>
+                <li>Test Database and Configurations</li>
                 <li>All Unit & Performance tests</li>
-                <li>Role Based and Parking Lot Authorisation</li>
+                <li>Role-Based Authorization</li>
               </ul>
               <div class="work__links">
                 <a href="https://github.com/team-perfecter/project-software-construction-leerjaar2" target="_blank" class="link__text">
@@ -111,18 +106,10 @@
               </ul>
               <p>Contribution:</p>
               <ul class="work__list">
-                <li>Multi Page Routing</li>
-                <li>Front End for Starting Page, Login & Register/Create Admin Pages & Admin Dashboard</li>
-                <li>Made Models, DTO's, Controllers & Services for Multiple Entities</li>
-                <li>The connection between Front End and Back End for everything on the Admin Dashboard:</li>
-                <ul class="work__list">
-                  <li>Event Table with working Pagination Component</li>
-                  <li>Creating an event with working validation</li>
-                  <li>Retrieving extra data for a Specific Event</li>
-                  <li>Updating and Deleting a Specific Event</li>
-                  <li>Creating an Admin</li>
-                </ul>
-                <li>Hiding certain buttons depending on if the Role has enough Permission</li>
+                <li>Multi Page Routing & Admin Dashboard</li>
+                <li>Models, DTOs, Controllers & Services for Entities</li>
+                <li>Role-based button visibility</li>
+                <li>CRUD & Pagination on Event Table</li>
               </ul>
               <div class="work__links">
                 <a href="https://github.com/Ber-kan/WebDev" target="_blank" class="link__text">
@@ -136,21 +123,20 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Eneco Room Booking Applicatie</h3>
-              <p>Blazor project for Eneco employees to reserve rooms with a visual floor plan, interactive weekly charts via ChartJs.Blazor, and integrated statistics.</p>
+              <p>Blazor project for Eneco employees to reserve rooms with a visual floor plan, interactive weekly bar charts via ChartJs.Blazor, and integrated statistics.</p>
               <ul class="work__list">
-                <li>Blazor</li>
-                <li>C#</li>
+                <li>Blazor / C#</li>
                 <li>ChartJs.Blazor</li>
                 <li>Data Integration</li>
-                <li>Gained experience working for a real company with limited guidance, tighter deadlines, and professional feedback</li>
+                <li>Real-world client experience with deadlines & professional feedback</li>
               </ul>
               <p>Contribution:</p>
-                <ul class="work__list">
-                    <li>Created the Statistics Page layout with multiple bar charts and integrated live backend data</li>
-                    <li>Developed the interactive room reservation system with floor plan visualization</li>
-                    <li>Implemented backend services and data connections for reservations, floors, wings, and users</li>
-                    <li>Added table filtering, sorting, and live search for rooms and users</li>
-                </ul>
+              <ul class="work__list">
+                <li>Statistics Page with multiple bar charts: total reservations, floor-wise, and wing-wise</li>
+                <li>Interactive room reservation system with floor plan visualization</li>
+                <li>Backend services for reservations, floors, wings, and users</li>
+                <li>Table filtering, sorting, and live search</li>
+              </ul>
               <div class="work__links">
                 <a href="https://github.com/MarcoNL1/ProjectD" target="_blank" class="link__text">
                   Visit Repository <span>&rarr;</span>
@@ -165,8 +151,7 @@
               <h3>Warehouse Management System</h3>
               <p>Python/Flask application for managing warehouse inventory with classification rules, optimized transfers, and PostgreSQL database validation.</p>
               <ul class="work__list">
-                <li>Python</li>
-                <li>Flask</li>
+                <li>Python / Flask</li>
                 <li>PostgreSQL</li>
                 <li>Data Validation</li>
               </ul>
@@ -194,10 +179,10 @@
 
     <!-- ***** Contact ***** -->
     <section class="contact" id="contact">
-      <div class="row">
+      <div class="row contact__info">
         <h2>Get in Touch</h2>
         <p>Reach me via email for inquiries or collaborations:</p>
-        <a href="mailto:jerreljanssen2@gmail.com" class="btn">jerreljanssen2@gmail.com</a>
+        <a href="mailto:jerreljanssen2@gmail.com" class="btn btn--pink">jerreljanssen2@gmail.com</a>
       </div>
     </section>
 
@@ -221,7 +206,5 @@
     </div>
   </footer>
 
-  <script src="./index.js"></script>
 </body>
-
 </html>
